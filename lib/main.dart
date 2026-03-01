@@ -31,8 +31,13 @@ class   MyHomePage extends StatelessWidget{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Device Preview'),
-        leading: IconButton(onPressed: () { print("Leading button pressed"); }, icon: Icon(Icons.menu)),
+        backgroundColor: Colors.blue,
+        title: Text('Flutter AppBar'),
+        leading: IconButton(onPressed: () { print("Leading button pressed"); }, icon: Icon(Icons.menu, color: Colors.white)),
+        actions: <Widget>[
+          IconButton(onPressed: () { print("Search button pressed"); }, icon: Icon(Icons.search, color: Colors.white)),
+          IconButton(onPressed: () { print("More button pressed"); }, icon: Icon(Icons.more_vert, color: Colors.white)),
+        ],
       ),
       body: Center(
         child: Text('Hello World'),

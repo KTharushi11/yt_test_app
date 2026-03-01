@@ -12,6 +12,9 @@ void main(){
       ),
     ),
   );
+  runApp(MyApp(
+    
+  ));
 }
 
 class MyAPP extends StatelessWidget{

@@ -26,10 +26,14 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hey"),
+          title: Text(
+            "Hey"
+          ),
         ),
         body: Center(
-          child: Text("Hello World"),
+          child: Text(
+            "Hello World",
+            style:TextStyle(fontSize: 24.0)),
         ),
       ),
     );

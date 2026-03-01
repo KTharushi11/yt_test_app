@@ -38,10 +38,11 @@ class   MyHomePage extends StatelessWidget{
           IconButton(onPressed: () { print("Search button pressed"); }, icon: Icon(Icons.search, color: Colors.white)),
           IconButton(onPressed: () { print("More button pressed"); }, icon: Icon(Icons.more_vert, color: Colors.white)),
         ],
+        flexibleSpace: Icon(Icons.photo_camera, size: 100, color: Colors.white.withOpacity(0.5)),
       ),
       body: Center(
         child: Text('Hello World'),
       ),
     );
-  }
+  } 
 }

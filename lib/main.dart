@@ -8,7 +8,7 @@ void main(){
         debugShowCheckedModeBanner: false,
         useInheritedMediaQuery: true,
         builder: DevicePreview.appBuilder,
-        home: const MyApp(),
+        home: MyApp(),
       ),
     ),
   );

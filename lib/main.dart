@@ -26,8 +26,10 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: const Color.fromARGB(255, 44, 93, 168),
           title: Text(
-            "Hey"
+            "Hey",
+            style: TextStyle(fontSize: 24.0, color: Colors.white),
           ),
         ),
         body: Center(

@@ -29,19 +29,21 @@ class   MyHomePage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text('Flutter AppBar', style: TextStyle(color: Colors.white)),
-        leading: IconButton(onPressed: () { print("Leading button pressed"); }, icon: Icon(Icons.menu, color: Colors.white)),
-        actions: <Widget>[
-          IconButton(onPressed: () { print("Search button pressed"); }, icon: Icon(Icons.search, color: Colors.white)),
-          IconButton(onPressed: () { print("More button pressed"); }, icon: Icon(Icons.more_vert, color: Colors.white)),
-        ],
-        flexibleSpace: Icon(Icons.photo_camera, size: 100, color: Colors.white.withOpacity(0.5)),
-      ),
-      body: Center(
-        child: Text('Hello World'),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: Text('Flutter AppBar', style: TextStyle(color: Colors.white)),
+          leading: IconButton(onPressed: () { print("Leading button pressed"); }, icon: Icon(Icons.menu, color: Colors.white)),
+          actions: <Widget>[
+            IconButton(onPressed: () { print("Search button pressed"); }, icon: Icon(Icons.search, color: Colors.white)),
+            IconButton(onPressed: () { print("More button pressed"); }, icon: Icon(Icons.more_vert, color: Colors.white)),
+          ],
+          flexibleSpace: Icon(Icons.photo_camera, size: 100, color: Colors.white.withOpacity(0.5)),
+        ),
+        body: Center(
+          child: Text('Hello World'),
+        ),
       ),
     );
   } 

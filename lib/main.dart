@@ -19,13 +19,17 @@ void main(){
 
 class MyApp extends StatelessWidget{
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          "Hello Tharushi",
-          style: TextStyle(fontSize: 24),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Hey"),
+        ),
+        body: Center(
+          child: Text("Hello World"),
         ),
       ),
     );

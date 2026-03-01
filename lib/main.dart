@@ -32,6 +32,7 @@ class   MyHomePage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
         title: Text('Device Preview'),
+        leading: IconButton(onPressed: () { print("Leading button pressed"); }, icon: Icon(Icons.menu))
       ),
       body: Center(
         child: Text('Hello World'),

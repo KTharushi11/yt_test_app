@@ -24,19 +24,26 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 44, 93, 168),
-          title: Text(
-            "Hey",
-            style: TextStyle(fontSize: 24.0, color: Colors.white),
-          ),
-        ),
-        body: Center(
-          child: Text(
-            "Hello World",
-            style:TextStyle(fontSize: 24.0)),
-        ),
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),      
+      home: MyHomePage(),
+    );
+  }
+}
+
+class   MyHomePage extends StatelessWidget{
+  const MyHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Device Preview'),
+      ),
+      body: Center(
+        child: Text('Hello World'),
       ),
     );
   }

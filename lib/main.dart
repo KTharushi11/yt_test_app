@@ -12,20 +12,10 @@ void main(){
       ),
     ),
   );
-  runApp(MyApp(
-    
-  ));
+  
 }
 
-class MyAPP extends StatelessWidget{
-  const MyAPP({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return  MaterialApp(
-      home: MyApp(),
-    );
-  }
-}
+
 
 class MyApp extends StatelessWidget{
   const MyApp({super.key});

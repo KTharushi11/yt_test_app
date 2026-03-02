@@ -42,9 +42,7 @@ class MyHomePage extends StatelessWidget{
           ],
           flexibleSpace: Image.asset("assets/bi1.webp"),
         ),
-        body: Center(
-          child: Text('Hello World'),
-        ),
+        body: Center(),
       ),
     );
   } 

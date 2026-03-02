@@ -38,6 +38,7 @@ class MyHomePage extends StatelessWidget{
           actions: <Widget>[
             IconButton(onPressed: () { print("Search button pressed"); }, icon: Icon(Icons.search, color: Colors.white)),
             IconButton(onPressed: () { print("More button pressed"); }, icon: Icon(Icons.more_vert, color: Colors.white)),
+            IconButton(onPressed: () { print("Settings button pressed"); }, icon: Icon(Icons.settings, color: Colors.white)),
           ],
           flexibleSpace: Image.asset("assets/bi1.webp"),
         ),

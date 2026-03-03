@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget{
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.green,
           title: Text('Flutter AppBar', style: TextStyle(color: Colors.white)),
           leading: IconButton(onPressed: () { print("Leading button pressed"); }, icon: Icon(Icons.menu, color: Colors.white)),
           actions: <Widget>[
